@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Table tags</title>
+</head>
+<body>
+	<table border="1" cellpadding="5">
+		<tr>
+			<th align="left" colspan="7" >Order Form</th>
+		</tr>
+		<tr>
+			<td colspan="7">Please review orders information below. Click Edit to change this record ,click Delete to Delete the record,or click Cancle /Close to return back.</td>
+		</tr>
+		<tr>
+			<td align="left"colspan="5" style="background-color:lightgray;"  ><select><option>Record</option></select></td>
+				<td style="background-color:lightgray;"align="Right" colspan="2">View: 
+			<select><option>Review Orders</option></select></td>
+		</tr>
+		<tr>
+			<td style="Color:navy">
+			<p>&#8679;&#8681;
+				*-indicates a required field</p></td>
+			 <td colspan="6" align="right">
+          <input type="button" value="OK" />
+          <input type="button" value="Delete" />
+          <input type="button" value="Cancel" />
+        </td>
+		</tr>
+		<form method="post">
+			 <tr>
+          <td colspan="5">
+            <b>Customer:&nbsp;&nbsp;
+              <input type="text"name="bh" required pattern="[A-Za-z]+"title="Only alphabets..! "/></b>
+          </td>
+			<td colspan="2" align="Left">
+            <b>Address:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="bh" required pattern="[A-Za-z]+"/> </td>
+        </tr>
+        <tr>
+          <td colspan="5">
+            <b>Email:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" name="b" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+          </td>
+          <td colspan="2" align="left">
+            <b>City:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;<input type="text" name="bb" required pattern="[A-Z a-z]+"/>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="5"><b>Order Date:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp; <input type="date"/></td>
+          <td colspan="2" align="left">
+            <b>Region:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="b" required pattern="[A-Z a-z]+"/></td>
+        </tr>
+        <tr>
+          <td colspan="5"><b>Required date:</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date"/></td>
+          <td colspan="2" align="left">
+            <b>Postal Code:</b>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="10" required pattern="[0-9]+"/></td>
+        </tr>
+        <tr>
+          <td colspan="5"><b>Shipped date:</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" /></td>
+          <td colspan="2" align="left">
+            <b>Ship country:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select>
+              <option hidden>===Select country===</option>
+              <option>India</option>
+              <option>Canada</option>
+              <option>UAE</option>
+              <option>USA</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color:lightgray;">
+            <select></select>
+           <input placeholder="Quick Find"/></td>
+           <td colspan="6" style="background-color:lightgray;">
+            New Order Details &nbsp;&nbsp;
+             Actions
+            <select></select>&nbsp;&nbsp;
+           Report<select
+            ></select>
+          </td>
+      </tr>
+      <tr>
+      	<td style="color:navy;">Product Name</td>
+          <td style="color:navy;" align="right">Unit Price</td>
+          
+          <td style="color:navy;">Quantity</td>
+          
+          <td style="color:navy;" align="right">Discount</td>
+          <td style="color:navy;" align="left">
+            Product Category<br>
+            Name
+          </td>
+          <td style="color:navy;">
+            Product Supplier<br>
+            Company Name
+          </td>
+          <td style="color:navy;">Extended Price</td>
+        </tr>
+        <tr>
+          <td style="Color:Blue">Grandma's Boysenberry<br>
+            	Spread
+          </td>
+          <td align="right">$25.00</td>
+          
+          <td align="right">20</td>
+         
+          <td align="right">25.00%</td>
+          <td>Condiments</td>
+          <td>Grandma Kelly's<br>
+          	Homestead
+          </td>
+          <td align="right">$375.00</td>
+        </tr>
+        <tr>
+          <td style="Color:Blue">Tofu</td>
+          <td align="right">$23.25</td>
+          
+          <td align="right">20</td>
+          
+          <td align="right">25.00%</td>
+          <td>Produce</td>
+          <td>Mayumi's</td>
+          <td align="right">$348.75</td>
+        </tr>
+        <tr>
+          <td style="Color:Blue"> Teatime Chocolate<br>
+          	Biscuits             
+          </td>
+          <td align="right">$9.20</td>
+          
+          <td align="right">10</td>
+          
+          <td align="right">25.00%</td>
+          <td>Confections</td>
+          <td>Specialty Biscuits, Ltd.</td>
+
+          <td align="right">$69.00</td>
+        </tr>
+        <tr>
+          <td colspan="7">
+            ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+          </td>
+        </tr>
+        <tr><td></td>
+          
+          <td align="right">Avg:$19.15</td>
+          
+          <td align="right">Sum:50</td>
+          
+          <td align="right">Avg:25.00%</td>
+          <td colspan="3" align="right">Sum:$792.75</td>
+        </tr>
+        <tr>
+          <td colspan="7" align="right"><b>Subtotal:$792.75 </b></td>
+        </tr>
+        <tr>
+          <td>
+            <b
+              >Ship Name:<input
+                type="text"
+                name="nm"
+                required
+                pattern="[A-Za-z]+"
+                title="only alphabets..! "
+              />
+            </b>
+          </td>
+          <td align="right" colspan="8"><b>Freight:$38.28 </b></td>
+        </tr>
+        <tr>
+          <td>
+            Ship Via:<input
+              type="text"
+              name="nm"
+              placeholder="united package"
+              required
+              pattern="[A-Za-z]+"
+              title="only alphabets..! "
+            /><select></select>
+          </td>
+          <td align="right" colspan="6"><b>Total:$831.03 </b></td>
+        </tr>
+        <tr>
+        	<td colspan="7"><input type="submit" value="Sign Up"></td>
+        </tr>
+      <tr>
+			<td style="Color:navy">
+			<p>&#8679;&#8681;
+				*-indicates a required field</p></td>
+			 <td colspan="6" align="right">
+          <input type="button" value="OK" />
+          <input type="button" value="Delete" />
+          <input type="button" value="Cancel" />
+        </td>
+		</tr>
+           
+		</form>
+		</table>
+
+</body>
+</html>
