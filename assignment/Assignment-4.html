@@ -1,0 +1,118 @@
+• What is JavaScript? 
+Ans=> JavaScript is the Programming Language for the Web.
+JavaScript can update and change both HTML and CSS.
+JavaScript can calculate, manipulate and validate data. <br>
+
+• What is the use of isNaN function?
+Ans=>  In JavaScript NaN is short for "Not-a-Number".
+The isNaN() method returns true if a value is NaN.
+The isNaN() method converts the value to a number before testing it.<br>
+
+• What is negative Infinity? 
+Ans=>  The negative infinity in JavaScript is a constant value that is used to represent
+ a value that is the lowest available. This means that no other number is lesser than this 
+ value. It can be generated using a self-made function or by an arithmetic operation.<br>
+
+• Which company developed JavaScript? 
+ Ans=>  JavaScript developed by Brendan Eich of Netscape Communications. <br>
+
+• What are undeclared and undefined variables?
+ Ans=> Undefined: It occurs when a variable has been declared but has not been assigned 
+ any value. Undefined is not a keyword. 
+
+ Undeclared: It occurs when we try to access any variable that is not initialized or declared
+  earlier using the var or const keyword. If we use ‘typeof’ operator to get the value of an 
+  undeclared variable, we will face the runtime error with the return value as “undefined”.
+   The scope of the undeclared variables is always global. <br>
+
+• Write the code for adding new elements dynamically? 
+   Ans=>  Javascript is a very important language when it comes to learning how the browser works.
+    Often there are times we would like to add dynamic elements/content to our web pages. 
+    This post deals with all of that.
+    document.createElement("<tagName>");  
+        // Where <tagName> can be any HTML 
+        // tagName like div, ul, button, etc.
+        
+        // newDiv element has been created
+        For Eg: let newDiv = document.createElement("div");<br>
+
+
+• What is the difference between ViewState and SessionState?
+Ans=>  It's a way to track what the user is doing on the site.. across multiple pages
+ ...amid the statelessness of the Web. e.g. the contents of a particular user's shopping 
+ cart is session data. Cookies can be used for session state. View State on the other hand
+  is information specific to particular web page.<br>
+
+• What is === operator? 
+  Ans=> The strict equality (===) operator checks whether its two operands are equal, returning 
+  a Boolean result. Unlike the equality operator, the strict equality operator always considers 
+  operands of different types to be different.<br>
+
+• How can the style/class of an element be changed? 
+Ans=> There are two common approaches that allow us to achieve this task.
+
+style.property
+Changing the class itself<br>
+
+
+• How to read and write a file using JavaScript? 
+Ans=> var fs = require("fs");
+console.log("Going to write into existing file");
+
+// Open a new file with name input.txt and write Simply Easy Learning! to it.
+fs.writeFile('input.txt', 'Simply Easy Learning!', function(err) {
+   console.log("Data written successfully!");
+   console.log("Let's read newly written data");
+
+   // Read the newly written file and print all of its content on the console
+   fs.readFile('input.txt', function (err, data) {
+      console.log("Asynchronous read: " + data.toString());
+   });
+}); <br>
+
+
+• What are all the looping structures in JavaScript? 
+Ans=> Looping in programming languages is a feature that facilitates the execution of 
+a set of instructions/functions repeatedly while some condition evaluates to true.<br>
+
+
+• How can you convert the string of any base to an integer in JavaScript?
+Ans=> e can convert a string to an integer by using the parseInt () conversion by default. 
+But in other cases when the integer is represented in some other form we also need to pass
+the base string to decode it into the resultant number. <br>
+
+• What is the function of the delete operator?
+Ans=>Removes a given property from an object
+The delete operator removes a given property from an object. On successful deletion, 
+it will return true, else false will be returned.<br>
+
+
+• What are all the types of Pop up boxes available in JavaScript? 
+Ans=>In Javascript, popup boxes are used to display the message or notification to the user.
+There are three types of pop-up boxes in JavaScript namely Alert Box, Confirm Box and Prompt Box.<br>
+
+
+• What is the use of Void (0)? 
+Ans=> This operator allows evaluating expressions that produce a value into places where an
+ expression that evaluates to undefined is desired. The void operator is often used merely to
+obtain the undefined primitive value, usually using void (0) (which is equivalent to void 0).<br>
+
+
+• How can a page be forced to load another page in JavaScript?
+Ans=>  We can use window.location property inside the script tag to forcefully load another 
+page in Javascript. It is a reference to a Location object that is it represents the current 
+location of the document. We can change the URL of a window by accessing it.<br>
+
+
+• What are the disadvantages of using innerHTML in JavaScript?
+Ans=>The use of innerHTML very slow: The process of using innerHTML is much slower as its
+ contents as slowly built, also already parsed contents and elements are also re-parsed which takes time.
+Preserves event handlers attached to any DOM elements: The event handlers do not get attached to
+the new elements created by setting innerHTML automatically. To do so one has to keep track of 
+the event handlers and attach it to new elements manually. This may cause a memory leak on some browsers.
+Content is replaced everywhere: Either you add, append, delete or modify contents on a webpage 
+using innerHTML, all contents is replaced, also all the DOM nodes inside that element are reparsed
+ and recreated.
+Appending to innerHTML is not supported: Usually, += is used for appending in JavaScript. But on
+ appending to an Html tag using innerHTML, the whole tag is re-parsed.
+
